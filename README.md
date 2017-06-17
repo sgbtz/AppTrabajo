@@ -1,2 +1,2 @@
 # AppTrabajo
-Web app for FAST school project. (Not modifie)
+Web app for FAST school project. (Not modify)
