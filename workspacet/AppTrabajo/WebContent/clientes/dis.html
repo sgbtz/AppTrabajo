@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>dis.html</title>
+<link href="css/dis.css" rel="stylesheet" type="text/css">
+<script src="../js/registro.js"></script>
+</head>
+<body>
+	<header>
+		<h1 id="cab11" class="titular dispositivo">Introducción de dispositivo</h1>
+		<h2 id="cab21" class="titular">Introduzca tipo de dispositivo y dirección MAC</h2>
+	</header>
+	<section>
+		<p id="par1" class="descripcion">Si el dispositivo no es ninguno de los que aparece en la lista desplegable, seleccione otro y aparecerán otros dispositivos</p>
+		
+		<form action="creaDis.jsp" method="GET" name="formulDis" id="formulDis" onsubmit="return validaFormulDis()">
+			<div>
+				<label for="dis">Dispositivo</label>
+				<select name="dis" id="dis">
+					<option value="ord">ordenador</option>
+					<option value="con">conmutador</option>
+					<option value="otr">otro</option>
+				</select>
+			</div>
+			<div>
+				<label for="mac">Dirección MAC</label>
+				<input name="mac" id="mac" type="text">
+			</div>
+			<div>
+				<input type="submit" value="Enviar">
+				<input type="reset" value ="Borrar">
+			</div>
+		</form>
+	</section>
+	<script type="text/javascript" src="js/fun_dis.js"></script>
+</body>
+</html>

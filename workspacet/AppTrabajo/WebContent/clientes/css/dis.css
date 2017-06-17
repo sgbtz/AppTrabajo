@@ -1,0 +1,11 @@
+.titular {
+	border-bottom: 1px solid red;
+}
+
+.dispositivo {
+	text-align: center;
+}
+
+.descripcion {
+	color: grey;
+}

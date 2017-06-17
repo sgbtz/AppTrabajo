@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>usu.html</title>
+<link href="css/usu.css" rel="stylesheet" type="text/css">
+<script src="../js/registro.js"></script>
+</head>
+<body >
+	<header>
+		<h1 id="cab11" class="tamvar invertible">Creación/modificación de usuario</h1>
+		<h2 id="cab21" class="tamvar invertible">Introduzca usuario y contraseña</h2>
+	</header>
+	<section>
+		<p id="par1" class="tamvar">El usuario debe contener un máximo de 10 caracteres</p>
+		<p id="par2" class="invertible">La contraseña debe cumplir las siguientes condiciones</p>
+		
+		<ol id="lis1">
+			<li class="tamvar invertible">
+				tener una longitud mínima de 8 caracteres
+			</li>
+			<li class="tamvar invertible">
+				tener una longitud máxima de 15 caracteres
+			</li>
+			<li class="tamvar invertible">
+				contener al menos un carácter numérico
+			</li>
+			<li class="tamvar invertible">
+				contener al menos un carácter en mayúsculas
+			</li>
+			<li class="tamvar invertible">
+				contener al menos un carácter en minúsculas
+			</li>
+		</ol>
+		
+		<form action="usuarios.jsp" method="POST" name="formulAut" id="formulAut" onsubmit="return validaFormulAut()">
+			<div>
+				<label for="usu">Nombre</label>
+				<input id="usu" name="usu" type="text" maxlength="10">
+				<span id="existe"></span>
+			</div>
+			<div>
+				<label for="contra">Contraseña</label>
+				<input id="contra" name="contra" type="password">
+			</div>
+			
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borrar">
+		</form>
+		
+		<div id="cont1">
+			<input type="button" id="bot1" value="Invierte color">
+			<input type="button" id="bot2" value="Cambia tamaño">
+		</div>
+	</section>
+	<script type="text/javascript" src="js/fun_usu.js"></script>
+</body>
+</html>

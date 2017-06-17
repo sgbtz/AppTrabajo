@@ -1,0 +1,129 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.boton {
+	background-color: #a55;
+	color: white;
+	text-transform: uppercase;
+}
+
+.boton:hover,  .acceso:hover{
+	background-color: #5a5;
+}
+
+.acceso {
+	display: block;
+	background-color: #a55;
+	color: white;
+	float: right;
+	font-size: 11px;
+	padding: 10px 7px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 2px;
+}
+
+#volver {
+	float: left;
+}
+
+#formacceso {
+	border: 2px solid #a55;
+	color: #a55;
+	background-color: white;
+	display: none;
+	font-size: 11px;
+	padding: 0px 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+	top: 3px; 
+	right: 3px; 
+	
+}
+
+#formacceso .boton {
+	font-size: 10px;
+	font-weight: bold;
+	padding: 1px;
+	margin: 0px;
+}
+
+#nombreusuario {
+	background-color: white;
+	color:  #a55;
+}
+
+#pie {
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    margin: 0;
+    height: 35px;
+    width: 100%;
+    border-top: 1px solid rgb(180, 180, 180);
+}
+
+#pie p {
+    padding: 0px 20px;
+    font-size: 0.85em;
+    /*Debido a que el texto de la tarea se puede malinterpretar,
+      se admite como font-size (0.85em, 0.15em, 15% y 85%)*/
+    margin-top: 4px;
+}
+
+#bienvenida, #menu, #crear,  #lista {
+	clear: both;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bienvenida, #menu {
+	padding-top: 10%;
+}
+
+#crear,  #lista{
+	padding-top: 4%;
+	width: 75%;
+}
+
+
+.exito,  .error {
+	background-color: #5a5;
+	color: white;
+	font-size: 1.25em;
+	text-align: center;
+	padding: 0px;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	width: 40%;
+}
+
+.error {
+	background-color: #a55;
+}
+
+#lista td {
+	border-top: 2px solid #a55;
+	border-bottom: 2px solid #a55;
+	text-align: left;
+	padding-left: 20px;
+}
+
+#lista td:hover {
+	background-color: #fec;
+}
+
+#lista table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+}
+
+.
